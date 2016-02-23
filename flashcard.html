@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Create flashcards to study.">
+    <meta name="author" content="Kevin Sweeney">
+
+    <!-- Icon/title/Css/javascript/modules-->
+    <link rel="icon" href="img/logo.png">
+    <title>studyQ</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/flashy.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="js/flashapp.js"></script>
+</head>
+
+<body>
+
+<div ng-app="flip" ng-controller="flipCtrl">
+    <div class="flip"> 
+        <div class="card" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped"> 
+            <div class="face front"> 
+
+
+      
+          
+            <div style="margin: 3em">
+          
+            <h1>iFlashCards</h1>
+            <p class="lead">Create flashcard and cram for that big exam.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-success">Learn more</a>
+              </p>
+              <p>
+              <a href="/taco " class="btn btn-lg btn-primary">Create Deck</a>
+
+            </p>
+            </div>
+
+      </div> 
+            <div class="face back"> 
+                Back
+            </div> 
+        </div> 
+    </div> 
+</div> 
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+  </body>
+</html>
